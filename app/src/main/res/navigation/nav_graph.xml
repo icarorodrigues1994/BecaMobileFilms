@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_films_week">
+
+    <fragment
+        android:id="@+id/nav_films_week"
+        android:name="com.icarostudio.becamobile.view.AllFilmsFragment"
+        android:label="Upcoming"
+        tools:layout="@layout/fragment_films_list" />
+
+    <fragment
+        android:id="@+id/nav_tv_week"
+        android:name="com.icarostudio.becamobile.view.AllTvsFragment"
+        android:label="Upcoming"
+        tools:layout="@layout/fragment_tvs_list" />
+
+</navigation>

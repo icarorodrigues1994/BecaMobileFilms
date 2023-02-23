@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FilmFormActivity"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/image_filmimage"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:text="Nome do filme aqui..."
+        android:layout_marginTop="29dp"
+        android:textSize="26dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/image_filmimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_year"
+        android:textColor="#52FFFFFF"
+        android:layout_width="wrap_content"
+        android:text="ano do filme"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="13dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_name"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text_gender"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:text="genero do filme"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="20dp"
+        android:textSize="17dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="19dp"
+        android:text="Descrição do filme..."
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_gender" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_description"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/image_play"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_play_circle_outline_24"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/image_like"
+            android:layout_width="40dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
